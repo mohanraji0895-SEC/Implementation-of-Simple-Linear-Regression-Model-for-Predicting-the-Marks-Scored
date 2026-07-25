@@ -79,8 +79,9 @@ plt.grid(True)
 plt.show()
 
 ## Output:
-<img width="765" height="521" alt="image" src="https://github.com/user-attachments/assets/6228343c-e22b-4313-8e43-1977ceeb5eb0" />
-<img width="781" height="497" alt="image" src="https://github.com/user-attachments/assets/a213ce64-341e-4484-92f7-2a4bbb8cbe6d" />
+<img width="773" height="295" alt="image" src="https://github.com/user-attachments/assets/b51d09be-4eaf-4a54-81e9-121a3f84f1eb" />
+<img width="741" height="292" alt="image" src="https://github.com/user-attachments/assets/8ce0b77e-262e-45d2-86b3-3ac8f4334927" />
+
 
 
 
