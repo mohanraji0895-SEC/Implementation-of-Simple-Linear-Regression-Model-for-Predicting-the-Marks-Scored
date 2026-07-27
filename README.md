@@ -37,7 +37,7 @@ from sklearn.linear_model import LinearRegression
 df = pd.read_csv('exp_2_dataset_student_scores.csv')   # CSV should have two columns, e.g. "Hours","Scores"
 print("First 5 rows:\n", df.head(), "\n")
 print("Last 5 rows:\n", df.tail(), "\n")
-```# 2) Prepare input (X) and output (Y)
+# 2) Prepare input (X) and output (Y)
 # Assume CSV columns: Hours (feature) and Scores (target)
 X = df.iloc[:, :-1].values   # all rows, all columns except last -> shape (n_samples, 1)
 Y = df.iloc[:, -1].values    # all rows, last column -> shape (n_samples,)
@@ -79,7 +79,9 @@ plt.grid(True)
 plt.show()
 
 ## Output:
-**<img width="470" height="221" alt="image" src="https://github.com/user-attachments/assets/eff72efb-cd3b-4153-a1fe-b1dbd21f3b39" />
+<img width="837" height="505" alt="image" src="https://github.com/user-attachments/assets/d33c912b-e2ee-44a8-bd42-05e0c6df33ea" />
+<img width="796" height="513" alt="image" src="https://github.com/user-attachments/assets/dc36db4f-d72b-4693-bf48-0a8413ccff9e" />
+
 
 
 
