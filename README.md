@@ -1,26 +1,19 @@
 ​```python
-/*
-Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: MOHANRAJI D
-RegisterNumber:  212225060164
-*/
-# Implementation-of-Simple-Linear-Regression-Model-for-Predicting-the-Marks-Scored
 import pandas as pd
-import numpy as np 
+import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.metrics import mean_absolute_error, mean_squared_error
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 
 # 1) Load dataset
-df = pd.read_csv('exp_2_dataset_student_scores.csv')   # CSV should have two columns, e.g. "Hours","Scores"
+df = pd.read_csv('exp_2_dataset_student_scores.csv')
 print("First 5 rows:\n", df.head(), "\n")
 print("Last 5 rows:\n", df.tail(), "\n")
 
 # 2) Prepare input (X) and output (Y)
-# Assume CSV columns: Hours (feature) and Scores (target)
-X = df.iloc[:, :-1].values   # all rows, all columns except last -> shape (n_samples, 1)
-Y = df.iloc[:, -1].values    # all rows, last column -> shape (n_samples,)
+X = df.iloc[:, :-1].values
+Y = df.iloc[:, -1].values
 print("X (features):", X.flatten())
 print("Y (targets):", Y)
 
@@ -30,7 +23,7 @@ print("\nTraining samples:", len(X_train), " Testing samples:", len(X_test))
 
 # 4) Create and train the model
 regressor = LinearRegression()
-regressor.fit(X_train, Y_train)   # fit on training data
+regressor.fit(X_train, Y_train)
 
 # 5) Predict on the test set
 Y_pred = regressor.predict(X_test)
@@ -48,7 +41,7 @@ plt.legend()
 plt.grid(True)
 plt.show()
 
-# 7) Plot testing results (use X_test sorted for a nicer line)
+# 7) Plot testing results
 order = np.argsort(X_test.flatten())
 X_test_sorted = X_test.flatten()[order]
 Y_test_sorted = Y_test[order]
